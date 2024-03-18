@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KentroBOT BY OWNER @xkentrobest7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url("https://cdn.discordapp.com/attachments/1205956258901925948/1206284121232379954/20240211_195947.jpg?ex=66099722&is=65f72222&hm=41616fe56c3ebae38f1d5911ff39c233ea71ea7b2caa2329ad1bcb1462a46859&") center/cover no-repeat;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button, .invite-button, .date-button {
+            background-color: #f60514; /* Kırmızı arkaplan rengi */
+            color: #fff; /* Beyaz yazı rengi */
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-decoration: none; /* Altı çiziliğini kaldır */
+            display: inline-block; /* Düğmeyi yatayda hizala */
+            transition: background-color 0.3s; /* Arka plan renginin geçiş efekti */
+        }
+
+        button:hover, .invite-button:hover, .link-button:hover, .date-button:hover {
+            background-color: #d10303; /* Hover sırasında arka plan rengini değiştir */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .link {
+            color: #f60514;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://yt3.googleusercontent.com/SwFr2hevjRT96TrBeH6X_UZTXphmMerPhtKsovKKCfGRV3DHcMUJwEBDQzSVGewOk-YVkVuM=s160-c-k-c0x00ffffff-no-rj" alt="Kentro BOT">
+    <h1>Kentro BOT</h1>
+    
+    <!-- Kentro Botu Davet Et düğmesi -->
+    <a href="https://discord.com/oauth2/authorize?client_id=1203736849072521247&scope=applications.commands%20bot&permissions=8" target="_blank" class="invite-button">Kentro Botu Davet Et</a>
+    
+    <!-- Discord sunucu davet linki -->
+    <a href="https://discord.gg/qjfqjMvbdu" target="_blank" class="link-button invite-button">Discord Sunucumuza Katılın</a>
+    
+    <!-- Tarih ve Saati görüntülemek için düğme -->
+    <button id="dateButton" type="button" class="date-button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Tarih ve Saat'i görüntülemek için beni tıklayın.
+    </button>
+    
+    <!-- Display area for Date and Time -->
+    <p id="demo"></p>
+</div>
+
+</body>
+</html>
